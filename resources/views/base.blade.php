@@ -10,12 +10,8 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <div class="bg-gray-800 text-white py-2">
-        <div class="container mx-auto lg:w-3/4 xl:w-2/3 flex-grow">
-            @include('_header')
-        </div>
-    </div>
-
+    @include('_header')
+   
     <div class="container mx-auto lg:w-3/4 xl:w-2/3 flex-grow">
         <main class="p-4 md:p-8 lg:p-12 flex-grow">
             <div class="content bg-gray-200 p-4 md:p-8 lg:p-12">
@@ -29,7 +25,7 @@
                 <p class="text-gray-600 mb-6 lg:mb-8">Voor veel mensen is en blijft Amsterdam een zeer aantrekkelijke plek om te wonen en dus blijven we bouwen aan de groei van de stad.</p>
 
                 <p class="text-gray-600">Maar Amsterdam bestaat natuurlijk uit méér dan alleen woningen. Daarom bouwen we aan een sociaal-duurzaam Amsterdam: een stad die het welzijn van haar bewoners belangrijk vindt en verbetert,
-                     door niet alleen woningen te bouwen maar ook te zorgen voor maatschappelijke voorzieningen, voor huidige bewoners en toekomstige generaties.
+                    door niet alleen woningen te bouwen maar ook te zorgen voor maatschappelijke voorzieningen, voor huidige bewoners en toekomstige generaties.
 
                 </p>
             </div>
@@ -37,7 +33,6 @@
     </div>
 
     @include('_footer')
-
 
 </body>
 

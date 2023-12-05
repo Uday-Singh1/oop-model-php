@@ -1,4 +1,4 @@
-<header class="bg-gray-800 text-white py-2 flex justify-between items-center">
+<header class="bg-gray-800 text-white py-4 flex justify-between items-center">
     <div class="logo flex items-center">
     <!-- <img src="/public/images/amsterdam-xxx.svg" alt="Amsterdam-xxx" class="rounded-full w-15 h-15 ml-4"> -->
         <h5 class="ml-4 font-bold">Amsterdam-BMV</h5>
