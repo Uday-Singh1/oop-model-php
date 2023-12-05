@@ -5,43 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yoo</title>
     <link href="/dist/app.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+<body class="font-sans antialiased leading-none m-0 p-0 h-full flex flex-col">
 
-    <div class="container" style="width: 80%; margin: 0 auto;">
+    <div class="flex flex-col min-h-screen">
 
-        <header style="background-color: #333; color: #fff; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+        <div class="container mx-auto lg:w-3/4 xl:w-2/3 flex-grow">
 
-            <div class="logo">
-                <h5>Logo</h5>
-            </div>
+            <header class="bg-gray-800 text-white py-2 flex justify-between items-center">
 
-            <nav>
-                <ul style="list-style: none; display: flex;">
-                    <li style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: #fff; font-weight: bold;">Menu-item 1</a></li>
-                    <li style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: #fff; font-weight: bold;">Menu-item 2</a></li>
-                    <li><a href="#" style="text-decoration: none; color: #fff; font-weight: bold;">Menu-item 3</a></li>
-                </ul>
-            </nav>
-        </header>
+                <div class="logo">
+                    <h5>Logo</h5>
+                </div>
 
-        <main style="padding: 20px 0;">
+                <nav>
+                    <ul class="flex list-none">
+                        <li class="mr-4"><a href="#" class="no-underline text-white font-bold">Menu-item 1</a></li>
+                        <li class="mr-4"><a href="#" class="no-underline text-white font-bold">Menu-item 2</a></li>
+                        <li><a href="#" class="no-underline text-white font-bold">Menu-item 3</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <div class="content" style="background-color: #f0f0f0; padding: 20px;">
+            <main class="p-4 md:p-8 lg:p-12 flex-grow">
 
-                <h1 style="color: #333; font-size: 2em; margin-bottom: 10px;">Welkom bij Mijn Website</h1>
+                <div class="content bg-gray-200 p-4 md:p-8 lg:p-12">
 
-                <p style="color: #555; margin-bottom: 10px;">Dit is een voorbeeldtekst in het contentgedeelte van de website. Je kunt deze ruimte gebruiken om je eigen inhoud toe te voegen.</p>
+                    <h1 class="text-gray-700 text-2xl lg:text-3xl xl:text-4xl mb-6 lg:mb-8">Welkom bij Mijn Website</h1>
 
-                <p style="color: #555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod augue vel ipsum laoreet, a varius dolor interdum. Fusce vel arcu sed velit vestibulum consectetur ut eget metus. Nulla facilisi. Praesent vel elit nec nisl pharetra blandit ut id turpis. Sed vel nisi sit amet quam tincidunt vestibulum. Nunc efficitur volutpat justo, ac convallis purus ultrices a. Sed non tortor a nisl feugiat cursus.</p>
-            </div>
-        </main>
+                    <p class="text-gray-600 mb-6 lg:mb-8">Dit is een voorbeeldtekst in het contentgedeelte van de website. Je kunt deze ruimte gebruiken om je eigen inhoud toe te voegen.</p>
 
-        <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px; position: absolute; bottom: 0; width: 100rem;">
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod augue vel ipsum laoreet, a varius dolor interdum. Fusce vel arcu sed velit vestibulum consectetur ut eget metus. Nulla facilisi. Praesent vel elit nec nisl pharetra blandit ut id turpis. Sed vel nisi sit amet quam tincidunt vestibulum. Nunc efficitur volutpat justo, ac convallis purus ultrices a. Sed non tortor a nisl feugiat cursus.</p>
+                </div>
+            </main>
+
+        </div>
+
+        <footer class="bg-gray-800 text-white text-center py-2">
             <p>&copy; {{ date('Y') }} Jouw Bedrijfsnaam. Alle rechten voorbehouden.</p>
         </footer>
+
     </div>
 
 </body>
+
 </html>
