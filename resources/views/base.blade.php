@@ -10,6 +10,7 @@
 
 <body class="flex flex-col min-h-screen">
 
+
     @include('_header')
    
     <div class="container mx-auto lg:w-3/4 xl:w-2/3 flex-grow">
