@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +22,8 @@
         <h3 class="text-xl font-semibold mb-2">{{$project->titel}}</h3>
         <p>{{$project->description}}</p>
       </div>
+
+
       
       @endforeach
     </div>
