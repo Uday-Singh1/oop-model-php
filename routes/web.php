@@ -38,3 +38,5 @@ Route::get('/project', [ProjectController::class, 'index']) ->name('projects.pro
 Route::get('/projects/add', [ ProjectController::class, 'add' ])->name('projects.add');
 Route::get('/over', [AboutController::class, 'about']) ->name('about.me');
 Route::get('/contact', [ContactController::class, 'contactForm']) ->name('contact.form');
+
+Route::get('/project/{project}', [ProjectController::class, 'show'])->name('project.show');

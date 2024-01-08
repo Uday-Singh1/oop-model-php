@@ -21,6 +21,10 @@
         <img src="https://www.bmv.nl/wp-content/uploads/2017/04/BMV-Impressie-1024x640.jpg" alt="Project 1" class="mb-2 rounded-md w-full h-32 object-cover">
         <h3 class="text-xl font-semibold mb-2">{{$project->titel}}</h3>
         <p>{{$project->description}}</p>
+        <a href="{{ route('project.show', $project) }}" class="text-blue-600 font-bold py-2 px-4 rounded  bg-blue-300 underline">Bekijk dit project</a>
+
+
+
       </div>
 
 
