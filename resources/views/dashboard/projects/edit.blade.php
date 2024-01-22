@@ -12,13 +12,14 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    <form action="{{ route('project.store') }}" method="POST">
+                    <form action="{{ route('project.update', ['project' => $project]) }}" method="POST">
+                        @method('PUT')
                         @csrf
                         <div class="mt-8 max-w-md">
                             <div class="grid grid-cols-1 gap-6">
                                 @include('dashboard.projects._form',['project' => $project])
                                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded border">
-                                    Save
+                                    Updaten
                                 </button>
                             </div>
                         </div>

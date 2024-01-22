@@ -27,14 +27,9 @@ class ProjectAdminController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate([
-            'titel' => 'required|min:3',
-            'description' => 'required',
-            'published' => '',
-        ]);
 
-        $data['published'] = isset($data['published']);
-
+       $data = $this->validateProject($request);
+    
         $project = new Project($data);
         $project->save();
 
@@ -46,8 +41,44 @@ class ProjectAdminController extends Controller
         return view('dashboard.projects.edit', ['project' => $project]);
     }
 
+
+
+    public function update(Request $request, Project $project)
+    {
+        
+        $data = $this->validateProject($request);
+
+        $project->update($data);
+        $project->save();
+
+        return redirect()->route('project.index');
+    }
+
+
+
+
     public function destroy(Project $project)
     {
-        // Voeg hier de logica toe om een project te verwijderen
+        $project->delete();
+
+        return redirect()->route('project.index');
+    }
+
+
+    protected function validateProject(Request $request){
+
+        $data = $request->validate([
+            'titel' => 'required|min:3',
+            'description' => 'required',
+            'published' => '',
+        ]);
+
+   
+        $data['published'] = false;
+        if(isset($data['published'])){
+            $data['published'] = true;
+        }
+
+        return $data;
     }
 }
