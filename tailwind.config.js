@@ -10,6 +10,15 @@ export default {
     ],
 
     theme: {
+        colors: {
+            white: '#FFFFFF',
+            black: '#000000',
+            eggplant: '#2C061F',
+            mirage: '#374045',
+            summer: '#D89216',
+            russet: '#E1D89F',
+            red: '#FF0000',
+        },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -17,5 +26,5 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [require('@tailwindcss/forms')],
 };
